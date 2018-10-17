@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Slack\Laravel;
+namespace Cinereous\Slack\Laravel;
 
-use Maknz\Slack\Client as Client;
 use GuzzleHttp\Client as Guzzle;
+use Maknz\Slack\Client as Client;
 
 class ServiceProviderLaravel4 extends \Illuminate\Support\ServiceProvider
 {
@@ -14,7 +14,7 @@ class ServiceProviderLaravel4 extends \Illuminate\Support\ServiceProvider
      */
     public function boot()
     {
-        $this->package('phpify/slack-laravel', null, __DIR__);
+        $this->package('Cinereous/slack-laravel', null, __DIR__);
     }
 
     /**
